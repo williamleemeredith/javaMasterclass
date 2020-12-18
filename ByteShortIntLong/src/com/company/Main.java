@@ -28,6 +28,22 @@ public class Main {
         System.out.println("Min Long Value = " + myMinLongValue);
         System.out.println("Max Long Value = " + myMaxLongValue);
 
+        //assumed int and casting
         short bigSHortLiteralValue = 32767;
+
+        int myTotal = (myMinIntValue / 2);
+
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+
+        short myNewShortValue = (short) (myMinShortValue / 2);
+
+        //challenge
+        byte myChallengeByte = 125;
+        short myChallengeShort = 32_000;
+        int myChallengeInt = 100_000;
+        long myLongNumber = 50_000L + 10L * (myChallengeByte
+                                           + myChallengeShort
+                                           + myChallengeInt);
+        System.out.println(myLongNumber);
     }
 }
